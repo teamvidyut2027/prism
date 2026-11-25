@@ -1,0 +1,431 @@
+{
+  "name": "prism-core",
+  "config": {
+    "name": "prism-core",
+    "seed": 2026,
+    "families": [
+      "bars",
+      "lines",
+      "shapes",
+      "clocks",
+      "mazes",
+      "tables"
+    ],
+    "difficulties": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "per_cell": 8,
+    "questions_per_task": 3,
+    "paraphrase": true,
+    "perturb": true,
+    "counterfactual": true,
+    "near_dup_hamming": 2,
+    "max_attempts": 40,
+    "workers": 0
+  },
+  "created": "2026-11-25T14:02:35",
+  "build_seconds": 37.4,
+  "funnel": {
+    "bars": {
+      "attempts": 40,
+      "accepted": 40,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 37,
+      "variants: counterfactual": 39,
+      "variants dropped: perturbation destroyed the answer": 3,
+      "variants dropped: no answer-flipping edit found": 1
+    },
+    "lines": {
+      "attempts": 40,
+      "accepted": 40,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 33,
+      "variants: counterfactual": 40,
+      "variants dropped: perturbation destroyed the answer": 7
+    },
+    "shapes": {
+      "attempts": 40,
+      "accepted": 40,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 37,
+      "variants: counterfactual": 39,
+      "variants dropped: perturbation destroyed the answer": 3,
+      "variants dropped: no answer-flipping edit found": 1
+    },
+    "clocks": {
+      "attempts": 43,
+      "accepted": 38,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 40,
+      "variants: counterfactual": 40,
+      "rejected: ambiguous or degenerate scene": 3,
+      "rejected: duplicate scene content": 2
+    },
+    "mazes": {
+      "attempts": 40,
+      "accepted": 40,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 37,
+      "variants: counterfactual": 38,
+      "variants dropped: no answer-flipping edit found": 2,
+      "variants dropped: perturbation destroyed the answer": 3
+    },
+    "tables": {
+      "attempts": 40,
+      "accepted": 39,
+      "variants: paraphrase": 40,
+      "variants: perturbation": 22,
+      "variants: counterfactual": 40,
+      "rejected: near-duplicate image": 1,
+      "variants dropped: perturbation destroyed the answer": 18
+    }
+  },
+  "rejection_examples": {
+    "bars": [],
+    "lines": [],
+    "shapes": [],
+    "clocks": [
+      "sampling: hands overlap: hour and minute hand closer than 20 degrees",
+      "sampling: hands overlap: hour and minute hand closer than 20 degrees",
+      "sampling: hands overlap: hour and minute hand closer than 20 degrees"
+    ],
+    "mazes": [],
+    "tables": []
+  },
+  "stats": {
+    "headline": {
+      "tasks": 910,
+      "base_tasks": 237,
+      "questions": 1747,
+      "verified_pct": 100.0,
+      "families": 6,
+      "templates": 35,
+      "prior_baseline_pct": 24.7,
+      "boolean_true_pct": 51.8
+    },
+    "tasks": 910,
+    "base_tasks": 237,
+    "questions": 1747,
+    "by_family": {
+      "bars": 40,
+      "lines": 40,
+      "shapes": 40,
+      "clocks": 38,
+      "mazes": 40,
+      "tables": 39
+    },
+    "grid": {
+      "bars": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      },
+      "lines": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      },
+      "shapes": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      },
+      "clocks": {
+        "1": 8,
+        "2": 7,
+        "3": 7,
+        "4": 8,
+        "5": 8
+      },
+      "mazes": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      },
+      "tables": {
+        "1": 8,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      }
+    },
+    "variants": {
+      "paraphrase": 237,
+      "perturbation": 203,
+      "counterfactual": 233
+    },
+    "templates": {
+      "bars.argmax": 43,
+      "bars.argmin": 33,
+      "bars.count_above": 60,
+      "bars.value": 55,
+      "bars.diff": 65,
+      "bars.compare": 50,
+      "bars.rank": 4,
+      "lines.change": 79,
+      "lines.value_at": 100,
+      "lines.peak": 55,
+      "lines.higher_at": 44,
+      "lines.count_rises": 3,
+      "shapes.count_total": 47,
+      "shapes.count_color": 39,
+      "shapes.extreme_color": 32,
+      "shapes.common_color": 35,
+      "shapes.largest_shape": 7,
+      "shapes.count_shape": 38,
+      "shapes.above": 48,
+      "shapes.left_of": 30,
+      "shapes.count_both": 34,
+      "clocks.read_time": 97,
+      "clocks.minute_number": 46,
+      "clocks.minutes_to_hour": 85,
+      "clocks.time_after": 76,
+      "mazes.row_walls": 106,
+      "mazes.reachable": 92,
+      "mazes.shortest": 49,
+      "mazes.first_move": 37,
+      "tables.lookup": 55,
+      "tables.reverse": 33,
+      "tables.argmin": 51,
+      "tables.count_gt": 41,
+      "tables.argmax": 38,
+      "tables.col_sum": 40
+    },
+    "skills": {
+      "comparison": 461,
+      "counting": 452,
+      "numeric_reading": 280,
+      "text_reading": 317,
+      "arithmetic": 266,
+      "trend_analysis": 137,
+      "attribute_binding": 465,
+      "spatial_reasoning": 299,
+      "clock_reading": 304,
+      "path_reasoning": 178
+    },
+    "answer_types": {
+      "choice": 408,
+      "integer": 643,
+      "number": 220,
+      "boolean": 299,
+      "sequence": 4,
+      "time": 173
+    },
+    "diversity": {
+      "bars": {
+        "mean_dhash_distance": 94.3,
+        "min_dhash_distance": 20
+      },
+      "lines": {
+        "mean_dhash_distance": 73.7,
+        "min_dhash_distance": 27
+      },
+      "shapes": {
+        "mean_dhash_distance": 85.7,
+        "min_dhash_distance": 47
+      },
+      "clocks": {
+        "mean_dhash_distance": 42.0,
+        "min_dhash_distance": 10
+      },
+      "mazes": {
+        "mean_dhash_distance": 114.3,
+        "min_dhash_distance": 72
+      },
+      "tables": {
+        "mean_dhash_distance": 96.1,
+        "min_dhash_distance": 3
+      }
+    },
+    "answer_balance": {
+      "bars.argmax": {
+        "distinct_answers": 16,
+        "majority_share": 0.116,
+        "entropy": 0.97
+      },
+      "bars.argmin": {
+        "distinct_answers": 15,
+        "majority_share": 0.212,
+        "entropy": 0.941
+      },
+      "bars.compare": {
+        "distinct_answers": 2,
+        "majority_share": 0.54,
+        "entropy": 0.995
+      },
+      "bars.count_above": {
+        "distinct_answers": 7,
+        "majority_share": 0.35,
+        "entropy": 0.838
+      },
+      "bars.diff": {
+        "distinct_answers": 32,
+        "majority_share": 0.108,
+        "entropy": 0.959
+      },
+      "bars.rank": {
+        "distinct_answers": 2,
+        "majority_share": 0.5,
+        "entropy": 1.0
+      },
+      "bars.value": {
+        "distinct_answers": 27,
+        "majority_share": 0.055,
+        "entropy": 0.979
+      },
+      "clocks.minute_number": {
+        "distinct_answers": 10,
+        "majority_share": 0.196,
+        "entropy": 0.943
+      },
+      "clocks.minutes_to_hour": {
+        "distinct_answers": 31,
+        "majority_share": 0.082,
+        "entropy": 0.959
+      },
+      "clocks.read_time": {
+        "distinct_answers": 45,
+        "majority_share": 0.031,
+        "entropy": 0.984
+      },
+      "clocks.time_after": {
+        "distinct_answers": 37,
+        "majority_share": 0.039,
+        "entropy": 0.981
+      },
+      "lines.change": {
+        "distinct_answers": 2,
+        "majority_share": 0.595,
+        "entropy": 0.974
+      },
+      "lines.count_rises": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "lines.higher_at": {
+        "distinct_answers": 10,
+        "majority_share": 0.159,
+        "entropy": 0.97
+      },
+      "lines.peak": {
+        "distinct_answers": 16,
+        "majority_share": 0.273,
+        "entropy": 0.872
+      },
+      "lines.value_at": {
+        "distinct_answers": 44,
+        "majority_share": 0.08,
+        "entropy": 0.958
+      },
+      "mazes.first_move": {
+        "distinct_answers": 4,
+        "majority_share": 0.378,
+        "entropy": 0.891
+      },
+      "mazes.reachable": {
+        "distinct_answers": 2,
+        "majority_share": 0.554,
+        "entropy": 0.991
+      },
+      "mazes.row_walls": {
+        "distinct_answers": 8,
+        "majority_share": 0.274,
+        "entropy": 0.938
+      },
+      "mazes.shortest": {
+        "distinct_answers": 11,
+        "majority_share": 0.204,
+        "entropy": 0.907
+      },
+      "shapes.above": {
+        "distinct_answers": 2,
+        "majority_share": 0.625,
+        "entropy": 0.954
+      },
+      "shapes.common_color": {
+        "distinct_answers": 9,
+        "majority_share": 0.4,
+        "entropy": 0.854
+      },
+      "shapes.count_both": {
+        "distinct_answers": 3,
+        "majority_share": 0.441,
+        "entropy": 0.918
+      },
+      "shapes.count_color": {
+        "distinct_answers": 5,
+        "majority_share": 0.308,
+        "entropy": 0.965
+      },
+      "shapes.count_shape": {
+        "distinct_answers": 7,
+        "majority_share": 0.289,
+        "entropy": 0.878
+      },
+      "shapes.count_total": {
+        "distinct_answers": 14,
+        "majority_share": 0.17,
+        "entropy": 0.901
+      },
+      "shapes.extreme_color": {
+        "distinct_answers": 9,
+        "majority_share": 0.25,
+        "entropy": 0.923
+      },
+      "shapes.largest_shape": {
+        "distinct_answers": 2,
+        "majority_share": 0.571,
+        "entropy": 0.985
+      },
+      "shapes.left_of": {
+        "distinct_answers": 2,
+        "majority_share": 0.633,
+        "entropy": 0.948
+      },
+      "tables.argmax": {
+        "distinct_answers": 21,
+        "majority_share": 0.132,
+        "entropy": 0.951
+      },
+      "tables.argmin": {
+        "distinct_answers": 20,
+        "majority_share": 0.098,
+        "entropy": 0.943
+      },
+      "tables.col_sum": {
+        "distinct_answers": 29,
+        "majority_share": 0.075,
+        "entropy": 0.978
+      },
+      "tables.count_gt": {
+        "distinct_answers": 9,
+        "majority_share": 0.22,
+        "entropy": 0.927
+      },
+      "tables.lookup": {
+        "distinct_answers": 31,
+        "majority_share": 0.091,
+        "entropy": 0.962
+      },
+      "tables.reverse": {
+        "distinct_answers": 14,
+        "majority_share": 0.152,
+        "entropy": 0.976
+      }
+    }
+  }
+}

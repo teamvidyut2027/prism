@@ -1,0 +1,404 @@
+{
+  "name": "prism-sample",
+  "config": {
+    "name": "prism-sample",
+    "seed": 42,
+    "families": [
+      "bars",
+      "lines",
+      "shapes",
+      "clocks",
+      "mazes",
+      "tables"
+    ],
+    "difficulties": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "per_cell": 1,
+    "questions_per_task": 3,
+    "paraphrase": true,
+    "perturb": true,
+    "counterfactual": true,
+    "near_dup_hamming": 2,
+    "max_attempts": 40,
+    "workers": 0
+  },
+  "created": "2026-11-25T12:15:34",
+  "build_seconds": 4.4,
+  "funnel": {
+    "bars": {
+      "attempts": 5,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 4,
+      "variants: counterfactual": 5,
+      "variants dropped: perturbation destroyed the answer": 1
+    },
+    "lines": {
+      "attempts": 5,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 4,
+      "variants: counterfactual": 5,
+      "variants dropped: perturbation destroyed the answer": 1
+    },
+    "shapes": {
+      "attempts": 5,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 5,
+      "variants: counterfactual": 5
+    },
+    "clocks": {
+      "attempts": 6,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 5,
+      "variants: counterfactual": 5,
+      "rejected: ambiguous or degenerate scene": 1
+    },
+    "mazes": {
+      "attempts": 5,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 5,
+      "variants: counterfactual": 5
+    },
+    "tables": {
+      "attempts": 5,
+      "accepted": 5,
+      "variants: paraphrase": 5,
+      "variants: perturbation": 3,
+      "variants: counterfactual": 5,
+      "variants dropped: perturbation destroyed the answer": 2
+    }
+  },
+  "rejection_examples": {
+    "bars": [],
+    "lines": [],
+    "shapes": [],
+    "clocks": [
+      "sampling: hands overlap: hour and minute hand closer than 20 degrees"
+    ],
+    "mazes": [],
+    "tables": []
+  },
+  "stats": {
+    "headline": {
+      "tasks": 116,
+      "base_tasks": 30,
+      "questions": 220,
+      "verified_pct": 100.0,
+      "families": 6,
+      "templates": 32,
+      "prior_baseline_pct": 45.9,
+      "boolean_true_pct": 52.2
+    },
+    "tasks": 116,
+    "base_tasks": 30,
+    "questions": 220,
+    "by_family": {
+      "bars": 5,
+      "lines": 5,
+      "shapes": 5,
+      "clocks": 5,
+      "mazes": 5,
+      "tables": 5
+    },
+    "grid": {
+      "bars": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "lines": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "shapes": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "clocks": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "mazes": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "tables": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    "variants": {
+      "paraphrase": 30,
+      "perturbation": 26,
+      "counterfactual": 30
+    },
+    "templates": {
+      "bars.compare": 8,
+      "bars.diff": 4,
+      "bars.argmin": 6,
+      "bars.count_above": 7,
+      "bars.value": 8,
+      "bars.rank": 3,
+      "bars.argmax": 1,
+      "lines.change": 14,
+      "lines.value_at": 13,
+      "lines.higher_at": 4,
+      "lines.peak": 4,
+      "shapes.count_color": 7,
+      "shapes.largest_shape": 5,
+      "shapes.left_of": 4,
+      "shapes.count_total": 7,
+      "shapes.above": 9,
+      "shapes.count_shape": 3,
+      "shapes.extreme_color": 3,
+      "shapes.common_color": 2,
+      "clocks.minutes_to_hour": 12,
+      "clocks.minute_number": 7,
+      "clocks.read_time": 14,
+      "clocks.time_after": 7,
+      "mazes.row_walls": 17,
+      "mazes.reachable": 11,
+      "mazes.shortest": 6,
+      "tables.reverse": 10,
+      "tables.argmax": 7,
+      "tables.lookup": 4,
+      "tables.count_gt": 9,
+      "tables.argmin": 3,
+      "tables.col_sum": 1
+    },
+    "skills": {
+      "comparison": 59,
+      "numeric_reading": 32,
+      "text_reading": 38,
+      "arithmetic": 24,
+      "counting": 58,
+      "trend_analysis": 18,
+      "attribute_binding": 57,
+      "spatial_reasoning": 40,
+      "clock_reading": 40,
+      "path_reasoning": 17
+    },
+    "answer_types": {
+      "boolean": 46,
+      "number": 25,
+      "choice": 45,
+      "integer": 80,
+      "sequence": 3,
+      "time": 21
+    },
+    "diversity": {
+      "bars": {
+        "mean_dhash_distance": 101.0,
+        "min_dhash_distance": 78
+      },
+      "lines": {
+        "mean_dhash_distance": 78.2,
+        "min_dhash_distance": 66
+      },
+      "shapes": {
+        "mean_dhash_distance": 97.4,
+        "min_dhash_distance": 69
+      },
+      "clocks": {
+        "mean_dhash_distance": 45.8,
+        "min_dhash_distance": 31
+      },
+      "mazes": {
+        "mean_dhash_distance": 119.8,
+        "min_dhash_distance": 100
+      },
+      "tables": {
+        "mean_dhash_distance": 111.4,
+        "min_dhash_distance": 36
+      }
+    },
+    "answer_balance": {
+      "bars.argmax": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "bars.argmin": {
+        "distinct_answers": 3,
+        "majority_share": 0.333,
+        "entropy": 1.0
+      },
+      "bars.compare": {
+        "distinct_answers": 2,
+        "majority_share": 0.625,
+        "entropy": 0.954
+      },
+      "bars.count_above": {
+        "distinct_answers": 3,
+        "majority_share": 0.429,
+        "entropy": 0.914
+      },
+      "bars.diff": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "bars.rank": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "bars.value": {
+        "distinct_answers": 6,
+        "majority_share": 0.25,
+        "entropy": 0.967
+      },
+      "clocks.minute_number": {
+        "distinct_answers": 3,
+        "majority_share": 0.429,
+        "entropy": 0.982
+      },
+      "clocks.minutes_to_hour": {
+        "distinct_answers": 6,
+        "majority_share": 0.333,
+        "entropy": 0.936
+      },
+      "clocks.read_time": {
+        "distinct_answers": 6,
+        "majority_share": 0.214,
+        "entropy": 0.968
+      },
+      "clocks.time_after": {
+        "distinct_answers": 4,
+        "majority_share": 0.286,
+        "entropy": 0.975
+      },
+      "lines.change": {
+        "distinct_answers": 2,
+        "majority_share": 0.714,
+        "entropy": 0.863
+      },
+      "lines.higher_at": {
+        "distinct_answers": 3,
+        "majority_share": 0.5,
+        "entropy": 0.946
+      },
+      "lines.peak": {
+        "distinct_answers": 2,
+        "majority_share": 0.5,
+        "entropy": 1.0
+      },
+      "lines.value_at": {
+        "distinct_answers": 7,
+        "majority_share": 0.231,
+        "entropy": 0.948
+      },
+      "mazes.reachable": {
+        "distinct_answers": 2,
+        "majority_share": 0.636,
+        "entropy": 0.946
+      },
+      "mazes.row_walls": {
+        "distinct_answers": 7,
+        "majority_share": 0.235,
+        "entropy": 0.921
+      },
+      "mazes.shortest": {
+        "distinct_answers": 2,
+        "majority_share": 0.5,
+        "entropy": 1.0
+      },
+      "shapes.above": {
+        "distinct_answers": 2,
+        "majority_share": 0.556,
+        "entropy": 0.991
+      },
+      "shapes.common_color": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "shapes.count_color": {
+        "distinct_answers": 3,
+        "majority_share": 0.714,
+        "entropy": 0.725
+      },
+      "shapes.count_shape": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "shapes.count_total": {
+        "distinct_answers": 3,
+        "majority_share": 0.429,
+        "entropy": 0.914
+      },
+      "shapes.extreme_color": {
+        "distinct_answers": 2,
+        "majority_share": 0.667,
+        "entropy": 0.918
+      },
+      "shapes.largest_shape": {
+        "distinct_answers": 3,
+        "majority_share": 0.4,
+        "entropy": 0.96
+      },
+      "shapes.left_of": {
+        "distinct_answers": 2,
+        "majority_share": 0.5,
+        "entropy": 1.0
+      },
+      "tables.argmax": {
+        "distinct_answers": 5,
+        "majority_share": 0.286,
+        "entropy": 0.963
+      },
+      "tables.argmin": {
+        "distinct_answers": 2,
+        "majority_share": 0.667,
+        "entropy": 0.918
+      },
+      "tables.col_sum": {
+        "distinct_answers": 1,
+        "majority_share": 1.0,
+        "entropy": 0.0
+      },
+      "tables.count_gt": {
+        "distinct_answers": 3,
+        "majority_share": 0.444,
+        "entropy": 0.878
+      },
+      "tables.lookup": {
+        "distinct_answers": 2,
+        "majority_share": 0.5,
+        "entropy": 1.0
+      },
+      "tables.reverse": {
+        "distinct_answers": 5,
+        "majority_share": 0.3,
+        "entropy": 0.935
+      }
+    }
+  }
+}

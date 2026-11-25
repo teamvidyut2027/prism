@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+web/node_modules/
+data/prism.db
+data/datasets/*
+!data/datasets/.gitkeep
+!data/datasets/prism-sample/
+scratch/
+*.log
+.DS_Store
+
+docs/evidence/runs/reproduce-*
+web/*.tsbuildinfo

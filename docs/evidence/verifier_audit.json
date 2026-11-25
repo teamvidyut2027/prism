@@ -1,0 +1,691 @@
+{
+  "summary": {
+    "scenes": 1173,
+    "agreement_pct": 99.74,
+    "determinism_pct": 100.0,
+    "corruptions": 1173,
+    "corruption_detection_pct": 100.0,
+    "per_family": {
+      "bars": {
+        "scenes": 200,
+        "agreement_pct": 100.0,
+        "determinism_pct": 100.0,
+        "corruptions": 200,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 78.0,
+          "blur": 84.0,
+          "jpeg": 84.0,
+          "downscale": 100.0
+        }
+      },
+      "clocks": {
+        "scenes": 174,
+        "agreement_pct": 100.0,
+        "determinism_pct": 100.0,
+        "corruptions": 174,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 97.73,
+          "blur": 100.0,
+          "jpeg": 100.0,
+          "downscale": 100.0
+        }
+      },
+      "lines": {
+        "scenes": 200,
+        "agreement_pct": 98.5,
+        "determinism_pct": 100.0,
+        "corruptions": 200,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 86.0,
+          "blur": 72.0,
+          "jpeg": 14.0,
+          "downscale": 90.0
+        }
+      },
+      "mazes": {
+        "scenes": 199,
+        "agreement_pct": 100.0,
+        "determinism_pct": 100.0,
+        "corruptions": 199,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 80.0,
+          "blur": 100.0,
+          "jpeg": 100.0,
+          "downscale": 100.0
+        }
+      },
+      "shapes": {
+        "scenes": 200,
+        "agreement_pct": 100.0,
+        "determinism_pct": 100.0,
+        "corruptions": 200,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 100.0,
+          "blur": 78.0,
+          "jpeg": 76.0,
+          "downscale": 100.0
+        }
+      },
+      "tables": {
+        "scenes": 200,
+        "agreement_pct": 100.0,
+        "determinism_pct": 100.0,
+        "corruptions": 200,
+        "corruption_detection_pct": 100.0,
+        "perturbation_recovery_pct": {
+          "noise": 78.0,
+          "blur": 34.0,
+          "jpeg": 66.0,
+          "downscale": 38.0
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "family": "bars",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "bars",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 9,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "bars",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 9,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "bars",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 7,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "perturb_jpeg_recovered": 8,
+        "perturb_noise_recovered": 6
+      },
+      "examples": []
+    },
+    {
+      "family": "bars",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 6,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "perturb_noise_recovered": 3,
+        "perturb_blur_recovered": 5
+      },
+      "examples": []
+    },
+    {
+      "family": "clocks",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 38,
+        "deterministic": 38,
+        "agree": 38,
+        "corruptions": 38,
+        "corruptions_caught": 38,
+        "perturb_noise_tried": 8,
+        "perturb_noise_recovered": 8,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "sampling_rejected": 2
+      },
+      "examples": []
+    },
+    {
+      "family": "clocks",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 31,
+        "deterministic": 31,
+        "agree": 31,
+        "corruptions": 31,
+        "corruptions_caught": 31,
+        "perturb_noise_tried": 7,
+        "perturb_noise_recovered": 7,
+        "sampling_rejected": 9,
+        "perturb_jpeg_tried": 8,
+        "perturb_jpeg_recovered": 8,
+        "perturb_blur_tried": 9,
+        "perturb_blur_recovered": 9,
+        "perturb_downscale_tried": 7,
+        "perturb_downscale_recovered": 7
+      },
+      "examples": []
+    },
+    {
+      "family": "clocks",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 36,
+        "deterministic": 36,
+        "agree": 36,
+        "corruptions": 36,
+        "corruptions_caught": 36,
+        "perturb_noise_tried": 9,
+        "perturb_noise_recovered": 9,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "sampling_rejected": 4,
+        "perturb_downscale_tried": 8,
+        "perturb_downscale_recovered": 8,
+        "perturb_jpeg_tried": 9,
+        "perturb_jpeg_recovered": 9
+      },
+      "examples": []
+    },
+    {
+      "family": "clocks",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 35,
+        "deterministic": 35,
+        "agree": 35,
+        "corruptions": 35,
+        "corruptions_caught": 35,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 9,
+        "perturb_blur_recovered": 9,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 6,
+        "perturb_downscale_recovered": 6,
+        "sampling_rejected": 5
+      },
+      "examples": []
+    },
+    {
+      "family": "clocks",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 34,
+        "deterministic": 34,
+        "agree": 34,
+        "corruptions": 34,
+        "corruptions_caught": 34,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 9,
+        "perturb_blur_tried": 9,
+        "perturb_blur_recovered": 9,
+        "perturb_jpeg_tried": 7,
+        "perturb_jpeg_recovered": 7,
+        "sampling_rejected": 6,
+        "perturb_downscale_tried": 8,
+        "perturb_downscale_recovered": 8
+      },
+      "examples": []
+    },
+    {
+      "family": "lines",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "perturb_jpeg_recovered": 5
+      },
+      "examples": []
+    },
+    {
+      "family": "lines",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 2,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "lines",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 9,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "lines",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 38,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "disagree": 2,
+        "perturb_downscale_tried": 10,
+        "perturb_noise_recovered": 6,
+        "perturb_blur_recovered": 7,
+        "perturb_downscale_recovered": 9
+      },
+      "examples": [
+        "Online@Jul: scene=68 pixels=70",
+        "Team A@Oct: scene=760 pixels=780"
+      ]
+    },
+    {
+      "family": "lines",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 39,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 7,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 6,
+        "disagree": 1
+      },
+      "examples": [
+        "Cost@2017: scene=250 pixels=360"
+      ]
+    },
+    {
+      "family": "mazes",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 39,
+        "deterministic": 39,
+        "agree": 39,
+        "corruptions": 39,
+        "corruptions_caught": 39,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 9,
+        "perturb_blur_recovered": 9,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "sampling_rejected": 1
+      },
+      "examples": []
+    },
+    {
+      "family": "mazes",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "mazes",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "mazes",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 9,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "mazes",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10,
+        "perturb_noise_recovered": 1
+      },
+      "examples": []
+    },
+    {
+      "family": "shapes",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "shapes",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "shapes",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 9,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "shapes",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 7,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 9,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "shapes",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 2,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "tables",
+      "difficulty": 1,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "tables",
+      "difficulty": 2,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_blur_recovered": 7,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_downscale_recovered": 9
+      },
+      "examples": []
+    },
+    {
+      "family": "tables",
+      "difficulty": 3,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 9,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_jpeg_recovered": 8,
+        "perturb_downscale_tried": 10
+      },
+      "examples": []
+    },
+    {
+      "family": "tables",
+      "difficulty": 4,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_noise_recovered": 10,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10,
+        "perturb_jpeg_recovered": 5
+      },
+      "examples": []
+    },
+    {
+      "family": "tables",
+      "difficulty": 5,
+      "counts": {
+        "scenes": 40,
+        "deterministic": 40,
+        "agree": 40,
+        "corruptions": 40,
+        "corruptions_caught": 40,
+        "perturb_noise_tried": 10,
+        "perturb_blur_tried": 10,
+        "perturb_jpeg_tried": 10,
+        "perturb_downscale_tried": 10
+      },
+      "examples": []
+    }
+  ]
+}

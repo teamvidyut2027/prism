@@ -1,0 +1,15 @@
+[1/4] building prism-core from seed 2026 ...
+[2/4] auditing the pixel verifier on 20 fresh scenes per family x level ...
+[3/4] evaluating the pixel oracle and blind baselines ...
+[4/4] checking results
+
+  PASS  every shipped gold answer verified from pixels       100.0% of 1747
+  PASS  pixel oracle scores 100% end to end                  1747/1747
+  PASS  verifier catches every injected label corruption     100.0% of 588
+  PASS  renders are deterministic                            100.0%
+  PASS  verifier agreement on fresh scenes >= 98%            99.83%
+  PASS  blind prior baseline stays below 40%                 25.0%
+  PASS  byte-identical to the committed benchmark            ce14c7fcd7bac688... vs ce14c7fcd7bac688...
+
+  dataset: 1747 questions, 910 tasks, fingerprint ce14c7fcd7bac688...  (text engine: raqm, 144s)
+exit=0

@@ -1,0 +1,13 @@
+# Prism: Visual Task Factory (Python 3.11+, tested on 3.13)
+# Exact pins: rendering is byte-reproducible only with the same Pillow/FreeType build.
+numpy==2.5.2
+pillow==12.3.0
+scipy==1.18.1
+opencv-python-headless==4.13.0.92
+fastapi==0.141.1
+uvicorn==0.52.4
+pydantic==2.13.4
+httpx==0.28.1
+anthropic==2.3.0
+# tests
+pytest==8.2.2

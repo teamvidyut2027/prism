@@ -1,0 +1,927 @@
+{
+  "id": "core-opus-5-5",
+  "dataset": "prism-core",
+  "model": "anthropic:opus-5-5",
+  "label": "Anthropic Opus 5.5",
+  "created": "2026-11-25T13:15:30",
+  "status": "done",
+  "config": {
+    "base_per_family": null,
+    "families": null,
+    "concurrency": 10
+  },
+  "metrics": {
+    "overall": {
+      "n": 1747,
+      "correct": 1663,
+      "acc": 0.9519,
+      "lo": 0.9409,
+      "hi": 0.961,
+      "base": {
+        "n": 688,
+        "correct": 651,
+        "acc": 0.9462,
+        "lo": 0.9268,
+        "hi": 0.9607
+      }
+    },
+    "by_family": {
+      "bars": {
+        "n": 310,
+        "correct": 310,
+        "acc": 1.0,
+        "lo": 0.9878,
+        "hi": 1.0
+      },
+      "clocks": {
+        "n": 304,
+        "correct": 262,
+        "acc": 0.8618,
+        "lo": 0.8185,
+        "hi": 0.8961
+      },
+      "lines": {
+        "n": 281,
+        "correct": 281,
+        "acc": 1.0,
+        "lo": 0.9865,
+        "hi": 1.0
+      },
+      "mazes": {
+        "n": 284,
+        "correct": 261,
+        "acc": 0.919,
+        "lo": 0.8814,
+        "hi": 0.9454
+      },
+      "shapes": {
+        "n": 310,
+        "correct": 305,
+        "acc": 0.9839,
+        "lo": 0.9628,
+        "hi": 0.9931
+      },
+      "tables": {
+        "n": 258,
+        "correct": 244,
+        "acc": 0.9457,
+        "lo": 0.911,
+        "hi": 0.9674
+      }
+    },
+    "by_difficulty": {
+      "1": {
+        "n": 364,
+        "correct": 355,
+        "acc": 0.9753,
+        "lo": 0.9537,
+        "hi": 0.9869
+      },
+      "2": {
+        "n": 352,
+        "correct": 344,
+        "acc": 0.9773,
+        "lo": 0.9558,
+        "hi": 0.9884
+      },
+      "3": {
+        "n": 348,
+        "correct": 338,
+        "acc": 0.9713,
+        "lo": 0.9479,
+        "hi": 0.9843
+      },
+      "4": {
+        "n": 353,
+        "correct": 322,
+        "acc": 0.9122,
+        "lo": 0.878,
+        "hi": 0.9374
+      },
+      "5": {
+        "n": 330,
+        "correct": 304,
+        "acc": 0.9212,
+        "lo": 0.8871,
+        "hi": 0.9457
+      }
+    },
+    "by_skill": {
+      "arithmetic": {
+        "n": 266,
+        "correct": 248,
+        "acc": 0.9323,
+        "lo": 0.8956,
+        "hi": 0.9568
+      },
+      "attribute_binding": {
+        "n": 465,
+        "correct": 465,
+        "acc": 1.0,
+        "lo": 0.9918,
+        "hi": 1.0
+      },
+      "clock_reading": {
+        "n": 304,
+        "correct": 262,
+        "acc": 0.8618,
+        "lo": 0.8185,
+        "hi": 0.8961
+      },
+      "comparison": {
+        "n": 461,
+        "correct": 448,
+        "acc": 0.9718,
+        "lo": 0.9524,
+        "hi": 0.9834
+      },
+      "counting": {
+        "n": 452,
+        "correct": 424,
+        "acc": 0.9381,
+        "lo": 0.9119,
+        "hi": 0.9568
+      },
+      "numeric_reading": {
+        "n": 280,
+        "correct": 280,
+        "acc": 1.0,
+        "lo": 0.9865,
+        "hi": 1.0
+      },
+      "path_reasoning": {
+        "n": 178,
+        "correct": 158,
+        "acc": 0.8876,
+        "lo": 0.8328,
+        "hi": 0.9261
+      },
+      "spatial_reasoning": {
+        "n": 299,
+        "correct": 296,
+        "acc": 0.99,
+        "lo": 0.9709,
+        "hi": 0.9966
+      },
+      "text_reading": {
+        "n": 317,
+        "correct": 303,
+        "acc": 0.9558,
+        "lo": 0.9272,
+        "hi": 0.9735
+      },
+      "trend_analysis": {
+        "n": 137,
+        "correct": 137,
+        "acc": 1.0,
+        "lo": 0.9727,
+        "hi": 1.0
+      }
+    },
+    "by_answer_type": {
+      "boolean": {
+        "n": 299,
+        "correct": 286,
+        "acc": 0.9565,
+        "lo": 0.927,
+        "hi": 0.9744
+      },
+      "choice": {
+        "n": 408,
+        "correct": 408,
+        "acc": 1.0,
+        "lo": 0.9907,
+        "hi": 1.0
+      },
+      "integer": {
+        "n": 643,
+        "correct": 605,
+        "acc": 0.9409,
+        "lo": 0.9199,
+        "hi": 0.9566
+      },
+      "number": {
+        "n": 220,
+        "correct": 220,
+        "acc": 1.0,
+        "lo": 0.9828,
+        "hi": 1.0
+      },
+      "sequence": {
+        "n": 4,
+        "correct": 4,
+        "acc": 1.0,
+        "lo": 0.5101,
+        "hi": 1.0
+      },
+      "time": {
+        "n": 173,
+        "correct": 140,
+        "acc": 0.8092,
+        "lo": 0.7442,
+        "hi": 0.8608
+      }
+    },
+    "by_template": {
+      "bars.argmax": {
+        "n": 43,
+        "correct": 43,
+        "acc": 1.0,
+        "lo": 0.918,
+        "hi": 1.0
+      },
+      "bars.argmin": {
+        "n": 33,
+        "correct": 33,
+        "acc": 1.0,
+        "lo": 0.8957,
+        "hi": 1.0
+      },
+      "bars.compare": {
+        "n": 50,
+        "correct": 50,
+        "acc": 1.0,
+        "lo": 0.9286,
+        "hi": 1.0
+      },
+      "bars.count_above": {
+        "n": 60,
+        "correct": 60,
+        "acc": 1.0,
+        "lo": 0.9398,
+        "hi": 1.0
+      },
+      "bars.diff": {
+        "n": 65,
+        "correct": 65,
+        "acc": 1.0,
+        "lo": 0.9442,
+        "hi": 1.0
+      },
+      "bars.rank": {
+        "n": 4,
+        "correct": 4,
+        "acc": 1.0,
+        "lo": 0.5101,
+        "hi": 1.0
+      },
+      "bars.value": {
+        "n": 55,
+        "correct": 55,
+        "acc": 1.0,
+        "lo": 0.9347,
+        "hi": 1.0
+      },
+      "clocks.minute_number": {
+        "n": 46,
+        "correct": 46,
+        "acc": 1.0,
+        "lo": 0.9229,
+        "hi": 1.0
+      },
+      "clocks.minutes_to_hour": {
+        "n": 85,
+        "correct": 76,
+        "acc": 0.8941,
+        "lo": 0.8109,
+        "hi": 0.9433
+      },
+      "clocks.read_time": {
+        "n": 97,
+        "correct": 72,
+        "acc": 0.7423,
+        "lo": 0.6472,
+        "hi": 0.8189
+      },
+      "clocks.time_after": {
+        "n": 76,
+        "correct": 68,
+        "acc": 0.8947,
+        "lo": 0.8058,
+        "hi": 0.9457
+      },
+      "lines.change": {
+        "n": 79,
+        "correct": 79,
+        "acc": 1.0,
+        "lo": 0.9536,
+        "hi": 1.0
+      },
+      "lines.count_rises": {
+        "n": 3,
+        "correct": 3,
+        "acc": 1.0,
+        "lo": 0.4385,
+        "hi": 1.0
+      },
+      "lines.higher_at": {
+        "n": 44,
+        "correct": 44,
+        "acc": 1.0,
+        "lo": 0.9197,
+        "hi": 1.0
+      },
+      "lines.peak": {
+        "n": 55,
+        "correct": 55,
+        "acc": 1.0,
+        "lo": 0.9347,
+        "hi": 1.0
+      },
+      "lines.value_at": {
+        "n": 100,
+        "correct": 100,
+        "acc": 1.0,
+        "lo": 0.963,
+        "hi": 1.0
+      },
+      "mazes.first_move": {
+        "n": 37,
+        "correct": 37,
+        "acc": 1.0,
+        "lo": 0.9059,
+        "hi": 1.0
+      },
+      "mazes.reachable": {
+        "n": 92,
+        "correct": 79,
+        "acc": 0.8587,
+        "lo": 0.7731,
+        "hi": 0.9155
+      },
+      "mazes.row_walls": {
+        "n": 106,
+        "correct": 103,
+        "acc": 0.9717,
+        "lo": 0.9201,
+        "hi": 0.9903
+      },
+      "mazes.shortest": {
+        "n": 49,
+        "correct": 42,
+        "acc": 0.8571,
+        "lo": 0.7333,
+        "hi": 0.929
+      },
+      "shapes.above": {
+        "n": 48,
+        "correct": 48,
+        "acc": 1.0,
+        "lo": 0.9259,
+        "hi": 1.0
+      },
+      "shapes.common_color": {
+        "n": 35,
+        "correct": 35,
+        "acc": 1.0,
+        "lo": 0.9011,
+        "hi": 1.0
+      },
+      "shapes.count_both": {
+        "n": 34,
+        "correct": 34,
+        "acc": 1.0,
+        "lo": 0.8985,
+        "hi": 1.0
+      },
+      "shapes.count_color": {
+        "n": 39,
+        "correct": 39,
+        "acc": 1.0,
+        "lo": 0.9103,
+        "hi": 1.0
+      },
+      "shapes.count_shape": {
+        "n": 38,
+        "correct": 38,
+        "acc": 1.0,
+        "lo": 0.9082,
+        "hi": 1.0
+      },
+      "shapes.count_total": {
+        "n": 47,
+        "correct": 42,
+        "acc": 0.8936,
+        "lo": 0.7741,
+        "hi": 0.9537
+      },
+      "shapes.extreme_color": {
+        "n": 32,
+        "correct": 32,
+        "acc": 1.0,
+        "lo": 0.8928,
+        "hi": 1.0
+      },
+      "shapes.largest_shape": {
+        "n": 7,
+        "correct": 7,
+        "acc": 1.0,
+        "lo": 0.6457,
+        "hi": 1.0
+      },
+      "shapes.left_of": {
+        "n": 30,
+        "correct": 30,
+        "acc": 1.0,
+        "lo": 0.8865,
+        "hi": 1.0
+      },
+      "tables.argmax": {
+        "n": 38,
+        "correct": 38,
+        "acc": 1.0,
+        "lo": 0.9082,
+        "hi": 1.0
+      },
+      "tables.argmin": {
+        "n": 51,
+        "correct": 51,
+        "acc": 1.0,
+        "lo": 0.93,
+        "hi": 1.0
+      },
+      "tables.col_sum": {
+        "n": 40,
+        "correct": 39,
+        "acc": 0.975,
+        "lo": 0.8712,
+        "hi": 0.9956
+      },
+      "tables.count_gt": {
+        "n": 41,
+        "correct": 28,
+        "acc": 0.6829,
+        "lo": 0.5302,
+        "hi": 0.8044
+      },
+      "tables.lookup": {
+        "n": 55,
+        "correct": 55,
+        "acc": 1.0,
+        "lo": 0.9347,
+        "hi": 1.0
+      },
+      "tables.reverse": {
+        "n": 33,
+        "correct": 33,
+        "acc": 1.0,
+        "lo": 0.8957,
+        "hi": 1.0
+      }
+    },
+    "by_variant": {
+      "base": {
+        "n": 688,
+        "correct": 651,
+        "acc": 0.9462,
+        "lo": 0.9268,
+        "hi": 0.9607
+      },
+      "counterfactual": {
+        "n": 233,
+        "correct": 220,
+        "acc": 0.9442,
+        "lo": 0.9069,
+        "hi": 0.9671
+      },
+      "paraphrase": {
+        "n": 237,
+        "correct": 224,
+        "acc": 0.9451,
+        "lo": 0.9084,
+        "hi": 0.9677
+      },
+      "perturbation": {
+        "n": 589,
+        "correct": 568,
+        "acc": 0.9643,
+        "lo": 0.9461,
+        "hi": 0.9766
+      }
+    },
+    "by_perturbation": {
+      "blur": {
+        "n": 133,
+        "correct": 130,
+        "acc": 0.9774,
+        "lo": 0.9358,
+        "hi": 0.9923
+      },
+      "downscale": {
+        "n": 168,
+        "correct": 161,
+        "acc": 0.9583,
+        "lo": 0.9165,
+        "hi": 0.9797
+      },
+      "jpeg": {
+        "n": 135,
+        "correct": 130,
+        "acc": 0.963,
+        "lo": 0.9162,
+        "hi": 0.9841
+      },
+      "noise": {
+        "n": 153,
+        "correct": 147,
+        "acc": 0.9608,
+        "lo": 0.9171,
+        "hi": 0.9819
+      }
+    },
+    "family_difficulty": {
+      "bars": {
+        "1": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "2": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "3": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "4": {
+          "n": 60,
+          "correct": 60,
+          "acc": 1.0,
+          "lo": 0.9398,
+          "hi": 1.0
+        },
+        "5": {
+          "n": 58,
+          "correct": 58,
+          "acc": 1.0,
+          "lo": 0.9379,
+          "hi": 1.0
+        }
+      },
+      "clocks": {
+        "1": {
+          "n": 64,
+          "correct": 58,
+          "acc": 0.9062,
+          "lo": 0.8102,
+          "hi": 0.9563
+        },
+        "2": {
+          "n": 56,
+          "correct": 52,
+          "acc": 0.9286,
+          "lo": 0.8302,
+          "hi": 0.9719
+        },
+        "3": {
+          "n": 56,
+          "correct": 50,
+          "acc": 0.8929,
+          "lo": 0.7853,
+          "hi": 0.95
+        },
+        "4": {
+          "n": 64,
+          "correct": 48,
+          "acc": 0.75,
+          "lo": 0.6318,
+          "hi": 0.8399
+        },
+        "5": {
+          "n": 64,
+          "correct": 54,
+          "acc": 0.8438,
+          "lo": 0.7357,
+          "hi": 0.9129
+        }
+      },
+      "lines": {
+        "1": {
+          "n": 50,
+          "correct": 50,
+          "acc": 1.0,
+          "lo": 0.9286,
+          "hi": 1.0
+        },
+        "2": {
+          "n": 54,
+          "correct": 54,
+          "acc": 1.0,
+          "lo": 0.9336,
+          "hi": 1.0
+        },
+        "3": {
+          "n": 58,
+          "correct": 58,
+          "acc": 1.0,
+          "lo": 0.9379,
+          "hi": 1.0
+        },
+        "4": {
+          "n": 61,
+          "correct": 61,
+          "acc": 1.0,
+          "lo": 0.9408,
+          "hi": 1.0
+        },
+        "5": {
+          "n": 58,
+          "correct": 58,
+          "acc": 1.0,
+          "lo": 0.9379,
+          "hi": 1.0
+        }
+      },
+      "mazes": {
+        "1": {
+          "n": 58,
+          "correct": 55,
+          "acc": 0.9483,
+          "lo": 0.8586,
+          "hi": 0.9823
+        },
+        "2": {
+          "n": 58,
+          "correct": 54,
+          "acc": 0.931,
+          "lo": 0.8357,
+          "hi": 0.9729
+        },
+        "3": {
+          "n": 60,
+          "correct": 56,
+          "acc": 0.9333,
+          "lo": 0.8407,
+          "hi": 0.9738
+        },
+        "4": {
+          "n": 55,
+          "correct": 48,
+          "acc": 0.8727,
+          "lo": 0.7598,
+          "hi": 0.937
+        },
+        "5": {
+          "n": 53,
+          "correct": 48,
+          "acc": 0.9057,
+          "lo": 0.7975,
+          "hi": 0.959
+        }
+      },
+      "shapes": {
+        "1": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "2": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "3": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "4": {
+          "n": 61,
+          "correct": 61,
+          "acc": 1.0,
+          "lo": 0.9408,
+          "hi": 1.0
+        },
+        "5": {
+          "n": 57,
+          "correct": 52,
+          "acc": 0.9123,
+          "lo": 0.8105,
+          "hi": 0.9619
+        }
+      },
+      "tables": {
+        "1": {
+          "n": 64,
+          "correct": 64,
+          "acc": 1.0,
+          "lo": 0.9434,
+          "hi": 1.0
+        },
+        "2": {
+          "n": 56,
+          "correct": 56,
+          "acc": 1.0,
+          "lo": 0.9358,
+          "hi": 1.0
+        },
+        "3": {
+          "n": 46,
+          "correct": 46,
+          "acc": 1.0,
+          "lo": 0.9229,
+          "hi": 1.0
+        },
+        "4": {
+          "n": 52,
+          "correct": 44,
+          "acc": 0.8462,
+          "lo": 0.7248,
+          "hi": 0.9199
+        },
+        "5": {
+          "n": 40,
+          "correct": 34,
+          "acc": 0.85,
+          "lo": 0.7093,
+          "hi": 0.9294
+        }
+      }
+    },
+    "consistency": {
+      "pairs": 237,
+      "same_answer": 0.9451,
+      "both_correct": 0.9156
+    },
+    "robustness": {
+      "pairs": 589,
+      "clean_acc": 0.9508,
+      "perturbed_acc": 0.9643,
+      "flip_rate": 0.0179
+    },
+    "counterfactual": {
+      "pairs": 233,
+      "grounded": 0.9056,
+      "stuck": 0.0258
+    },
+    "error_magnitude": {
+      "bars.count_above": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 60
+      },
+      "bars.diff": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 65
+      },
+      "bars.value": {
+        "mean": 0.036,
+        "median": 0.0,
+        "max": 2.0,
+        "n": 55
+      },
+      "clocks.minute_number": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 46
+      },
+      "clocks.minutes_to_hour": {
+        "mean": 0.129,
+        "median": 0.0,
+        "max": 2.0,
+        "n": 85
+      },
+      "clocks.read_time": {
+        "mean": 0.639,
+        "median": 0.0,
+        "max": 29.0,
+        "n": 97
+      },
+      "clocks.time_after": {
+        "mean": 2.224,
+        "median": 0.0,
+        "max": 61.0,
+        "n": 76
+      },
+      "lines.count_rises": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "lines.value_at": {
+        "mean": 0.02,
+        "median": 0.0,
+        "max": 2.0,
+        "n": 100
+      },
+      "mazes.row_walls": {
+        "mean": 0.028,
+        "median": 0.0,
+        "max": 1.0,
+        "n": 106
+      },
+      "mazes.shortest": {
+        "mean": 0.265,
+        "median": 0.0,
+        "max": 2.0,
+        "n": 49
+      },
+      "shapes.count_both": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 34
+      },
+      "shapes.count_color": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 39
+      },
+      "shapes.count_shape": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 38
+      },
+      "shapes.count_total": {
+        "mean": 0.106,
+        "median": 0.0,
+        "max": 1.0,
+        "n": 47
+      },
+      "tables.col_sum": {
+        "mean": 7.05,
+        "median": 0.0,
+        "max": 282.0,
+        "n": 40
+      },
+      "tables.count_gt": {
+        "mean": 0.317,
+        "median": 0.0,
+        "max": 1.0,
+        "n": 41
+      },
+      "tables.lookup": {
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "n": 55
+      }
+    },
+    "calibration": {
+      "n": 1747,
+      "ece": 0.0282,
+      "brier": 0.0394,
+      "mean_confidence": 0.9315,
+      "bins": [
+        {
+          "bin": 0.6,
+          "n": 61,
+          "conf": 0.6,
+          "acc": 0.508
+        },
+        {
+          "bin": 0.7,
+          "n": 7,
+          "conf": 0.741,
+          "acc": 0.571
+        },
+        {
+          "bin": 0.8,
+          "n": 303,
+          "conf": 0.839,
+          "acc": 0.924
+        },
+        {
+          "bin": 0.9,
+          "n": 1376,
+          "conf": 0.968,
+          "acc": 0.98
+        }
+      ]
+    },
+    "usage": {
+      "input_tokens": 1402319,
+      "output_tokens": 83719,
+      "cost_usd": 7.2837,
+      "latency_p50_ms": 1513,
+      "latency_p95_ms": 3659,
+      "errors": 0,
+      "cached": 0
+    }
+  },
+  "n_items": 1747,
+  "n_done": 1747,
+  "error": null
+}

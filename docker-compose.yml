@@ -1,0 +1,13 @@
+services:
+  prism:
+    build: .
+    image: prism:latest
+    ports:
+      - "8000:8000"
+    environment:
+      # optional: only needed to evaluate Anthropic models
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    volumes:
+      - prism-data:/app/data
+volumes:
+  prism-data:

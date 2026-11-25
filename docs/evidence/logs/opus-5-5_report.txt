@@ -1,0 +1,36 @@
+
+Anthropic Opus 5.5 on prism-core: 95.2% (1663/1747), 95% CI 94.1%-96.1%
+  by family:
+    bars                   100.0%  (n=310)
+    clocks                  86.2%  (n=304)
+    lines                  100.0%  (n=281)
+    mazes                   91.9%  (n=284)
+    shapes                  98.4%  (n=310)
+    tables                  94.6%  (n=258)
+  by difficulty:
+    1                       97.5%  (n=364)
+    2                       97.7%  (n=352)
+    3                       97.1%  (n=348)
+    4                       91.2%  (n=353)
+    5                       92.1%  (n=330)
+  by skill:
+    arithmetic              93.2%  (n=266)
+    attribute_binding      100.0%  (n=465)
+    clock_reading           86.2%  (n=304)
+    comparison              97.2%  (n=461)
+    counting                93.8%  (n=452)
+    numeric_reading        100.0%  (n=280)
+    path_reasoning          88.8%  (n=178)
+    spatial_reasoning       99.0%  (n=299)
+    text_reading            95.6%  (n=317)
+    trend_analysis         100.0%  (n=137)
+  by variant:
+    base                    94.6%  (n=688)
+    counterfactual          94.4%  (n=233)
+    paraphrase              94.5%  (n=237)
+    perturbation            96.4%  (n=589)
+  consistency: {'pairs': 237, 'same_answer': 0.9451, 'both_correct': 0.9156}
+  robustness: {'pairs': 589, 'clean_acc': 0.9508, 'perturbed_acc': 0.9643, 'flip_rate': 0.0179}
+  counterfactual: {'pairs': 233, 'grounded': 0.9056, 'stuck': 0.0258}
+  calibration: {'n': 1747, 'ece': 0.0282, 'brier': 0.0394, 'mean_confidence': 0.9315}
+  usage: {'input_tokens': 1402319, 'output_tokens': 83719, 'cost_usd': 7.2837, 'latency_p50_ms': 1513, 'latency_p95_ms': 3659, 'errors': 0, 'cached': 0}
